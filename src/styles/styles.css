@@ -1,0 +1,36 @@
+@media (max-width: 500px) {
+
+}
+
+@media (max-width: 1200px){
+    nav ul {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px){
+    nav ul {
+        display: flex;
+    }
+}
+
+
+/* header, main, footer {
+    display: flex
+} */
+
+header{
+    min-width: 100vw;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 5px;
+}
