@@ -1,0 +1,31 @@
+---
+import '../styles/styles.css'
+const { categ, imgURL, catLink } = Astro.props;
+---
+
+<style>
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        background-color: #1B236B;
+        border: 10px solid #1B236B;
+        width: 200px;
+        color: white;
+    }
+
+    a {
+        color: black;
+    }
+</style>
+
+<section>
+    <h2><a href={catLink}>{categ}</a></h2>
+
+</section>
+<section>
+    <a href={catLink}><img src={imgURL} alt={categ}></a>
+</section>

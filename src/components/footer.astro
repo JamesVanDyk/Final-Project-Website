@@ -3,15 +3,45 @@ import '../styles/styles.css'
 ---
 
 <style>
+    footer {
+        display: flex;
+        justify-content: space-between;
+        background-color: lightblue;
+    }
 
+    section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .topOfPage {
+        background-color: black;
+        max-height: 1rem;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    a {
+        text-decoration: none;
+    }
 </style>
 
 <footer>
     <section>
-
+        <ul>
+            <li><h2>Contact Us:</h2></li>
+            <li>Phone: 555-555-5555</li>
+            <li>Email: QWERTYWORLD@gmail.com</li>
+            <li>Socials:
+                <ul>
+                    <li>Instagram: @QWERTYWORLD</li>
+                    <li>Twitter: @QWERTYWORLD</li>
+                </ul>
+            </li>
+        </ul>
     </section>
 
-    <section>
-
+    <section class='topOfPage'>
+        <a href="/Final-Project-Website" style="color: white;">Return to top of page.</a>
     </section>
 </footer>
