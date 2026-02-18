@@ -1,0 +1,16 @@
+---
+import '../styles/styles.css'
+const { itemName, itemImgURL, price, itemPageURL } = Astro.props;
+---
+
+<main>
+    <section>
+        <a href={ itemPageURL }><img src={ itemImgURL } alt={ itemName }></a>
+    </section>
+    <section>
+        <h3><strong>{ itemName }</strong></h3>
+    </section>
+    <section>
+        <h4><em>{ price }</em></h4>
+    </section>
+</main>

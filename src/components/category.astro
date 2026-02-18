@@ -22,10 +22,13 @@ const { categ, imgURL, catLink } = Astro.props;
     }
 </style>
 
-<section>
-    <h2><a href={catLink}>{categ}</a></h2>
+<main>
+    <section>
+        <h2><a href={catLink}>{categ}</a></h2>
+    </section>'
 
-</section>
-<section>
-    <a href={catLink}><img src={imgURL} alt={categ}></a>
-</section>
+    <section>
+        <a href={catLink}><img src={imgURL} alt={categ}></a>
+    </section>
+</main>
+
