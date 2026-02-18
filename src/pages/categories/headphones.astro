@@ -1,40 +1,42 @@
 ---
 import '../../styles/styles.css'
+import Layout from '../../layouts/Layout.astro'
 import ListItem from '../../components/item.astro'
 ---
-
-<main>
-    <h2>Headphones</h2>
-    <section>
-        <ListItem
-            itemName=""
-            itemImgURL="../../assets/images/headphone 1.png"
-            price="$20"
-            itemPageURL=""
-        />
-    </section>
-    <section>
-        <ListItem
-            itemName=""
-            itemImgURL="../../assets/images/headphone 2.png"
-            price="$30"
-            itemPageURL=""
-        />
-    </section>
-    <section>
-        <ListItem
-            itemName=""
-            itemImgURL="../../assets/images/headphone 3.png"
-            price="$40"
-            itemPageURL=""
-        />
-    </section>
-    <section>
-        <ListItem
-            itemName=""
-            itemImgURL="../../assets/images/headphone 4.png"
-            price="$50"
-            itemPageURL=""
-        />
-    </section>
-</main>
+<Layout>
+    <main>
+        <h2>Headphones</h2>
+        <section>
+            <ListItem
+                itemName="Headphone 1"
+                itemImgURL="../../assets/images/headphone-1.jpg"
+                price="$20"
+                itemPageURL="/Final-Project-Website/Item-pages/headphones/headphone-one"
+            />
+        </section>
+        <section>
+            <ListItem
+                itemName="Headphone 2"
+                itemImgURL="../../assets/images/headphone-2.png"
+                price="$30"
+                itemPageURL=""
+            />
+        </section>
+        <section>
+            <ListItem
+                itemName="Headphone 3"
+                itemImgURL="../../assets/images/headphone-3.png"
+                price="$40"
+                itemPageURL=""
+            />
+        </section>
+        <section>
+            <ListItem
+                itemName="Headphone 4"
+                itemImgURL="../../assets/images/headphone-4.png"
+                price="$50"
+                itemPageURL=""
+            />
+        </section>
+    </main>
+</Layout>
