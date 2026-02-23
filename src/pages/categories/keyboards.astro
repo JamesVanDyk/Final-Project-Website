@@ -1,0 +1,42 @@
+---
+import '../../styles/styles.css'
+import Layout from '../../layouts/Layout.astro'
+import ListItem from '../../components/item.astro'
+---
+<Layout>
+    <main>
+        <h2>Keyboards</h2>
+        <section>
+            <ListItem
+                itemName="Keyboard 1"
+                itemImgURL="../../assets/images/keyboard-1.png"
+                price="$20"
+                itemPageURL="/Final-Project-Website/Item-pages/keyboards/keyboard-one"
+            />
+        </section>
+        <section>
+            <ListItem
+                itemName="Keyboard 2"
+                itemImgURL="../../assets/images/keyboard-2.png"
+                price="$30"
+                itemPageURL=""
+            />
+        </section>
+        <section>
+            <ListItem
+                itemName="Keyboard 3"
+                itemImgURL="../../assets/images/keyboard-3.png"
+                price="$40"
+                itemPageURL=""
+            />
+        </section>
+        <section>
+            <ListItem
+                itemName="Keyboard 4"
+                itemImgURL="../../assets/images/keyboard-4.png"
+                price="$50"
+                itemPageURL=""
+            />
+        </section>
+    </main>
+</Layout>

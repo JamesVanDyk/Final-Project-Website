@@ -1,0 +1,42 @@
+---
+import '../../styles/styles.css'
+import Layout from '../../layouts/Layout.astro'
+import ListItem from '../../components/item.astro'
+---
+<Layout>
+    <main>
+        <h2>Mice</h2>
+        <section>
+            <ListItem
+                itemName="Mouse 1"
+                itemImgURL="../../assets/images/mouse-1.png"
+                price="$20"
+                itemPageURL="/Final-Project-Website/Item-pages/headphones/headphone-one"
+            />
+        </section>
+        <section>
+            <ListItem
+                itemName="Mouse 2"
+                itemImgURL="../../assets/images/mouse-2.png"
+                price="$30"
+                itemPageURL=""
+            />
+        </section>
+        <section>
+            <ListItem
+                itemName="Mouse 3"
+                itemImgURL="../../assets/images/mouse-3.png"
+                price="$40"
+                itemPageURL=""
+            />
+        </section>
+        <section>
+            <ListItem
+                itemName="Mouse 4"
+                itemImgURL="../../assets/images/mouse-4.png"
+                price="$50"
+                itemPageURL=""
+            />
+        </section>
+    </main>
+</Layout>

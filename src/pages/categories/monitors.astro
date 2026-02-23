@@ -1,10 +1,43 @@
 ---
 import '../../styles/styles.css'
-
+import Layout from '../../layouts/Layout.astro'
+import ListItem from '../../components/item.astro'
 ---
 
-<main>
-    <section>
-        <img src="../../assets/images/monitor 1.png" alt="">
-    </section>
-</main>
+<Layout>
+    <main>
+        <h2>Monitor</h2>
+        <section>
+            <ListItem
+                itemName="Monitor 1"
+                itemImgURL="../../assets/images/monitor-1.png"
+                price="$20"
+                itemPageURL="/Final-Project-Website/Item-pages/headphones/headphone-one"
+            />
+        </section>
+        <section>
+            <ListItem
+                itemName="Monitor 2"
+                itemImgURL="../../assets/images/monitor-2.png"
+                price="$30"
+                itemPageURL=""
+            />
+        </section>
+        <section>
+            <ListItem
+                itemName="Monitor 3"
+                itemImgURL="../../assets/images/monitor-3.png"
+                price="$40"
+                itemPageURL=""
+            />
+        </section>
+        <section>
+            <ListItem
+                itemName="Monitor 4"
+                itemImgURL="../../assets/images/monitor-4.png"
+                price="$50"
+                itemPageURL=""
+            />
+        </section>
+    </main>
+</Layout>
