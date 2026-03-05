@@ -1,9 +1,17 @@
 ---
 import '../../../styles/styles.css'
 import Layout from '../../../layouts/Layout.astro'
+import Headphone from "../../../assets/images/headphone-1.jpg"
+import ItemPage from "../../../components/item-page.astro"
 ---
 
 <Layout>
     <main>
+        <ItemPage
+            itemImgURL={Headphone.src}
+            itemName="Headphone One"
+            price="$20"
+            specs="lamda"
+        />
     </main>
 </Layout>

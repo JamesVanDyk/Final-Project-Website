@@ -1,5 +1,6 @@
 ---
 import '../styles/styles.css'
+import CartImg from '../assets/icons/basket.svg'
 ---
 
 <style>
@@ -14,6 +15,10 @@ import '../styles/styles.css'
         color: #FFFFFF;
     }
 
+    img {
+        width: 24px;
+    }
+
     a {
         color: #FFFFFF;
         text-decoration: none;
@@ -22,12 +27,16 @@ import '../styles/styles.css'
     .tabs {
         font-size: 1.5rem;
     }
+
+    .side {
+        padding: 20px;
+    }
 </style>
 
 <header>
     <nav>
         <section>
-            <h1><a href="/Final-Project-Website">QWERTY WORLD</a></h1>
+            <h1 class="side"><a href="/Final-Project-Website">QWERTY WORLD</a></h1>
         </section>
 
         <section>
@@ -39,7 +48,7 @@ import '../styles/styles.css'
 
         <section>
             <ul>
-                <li><a href="/Final-Project-Website"><img src="../assets/icons/basket.svg" alt="SHOPPING CART"></a></li>
+                <li class="side"><a href="/Final-Project-Website"><img src={CartImg.src} alt="SHOPPING CART"></a></li>
             </ul>
         </section>
     </nav>

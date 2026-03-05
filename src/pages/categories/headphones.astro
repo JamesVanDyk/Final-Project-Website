@@ -2,14 +2,20 @@
 import '../../styles/styles.css'
 import Layout from '../../layouts/Layout.astro'
 import ListItem from '../../components/item.astro'
+import HeadphoneOne from "../../assets/images/headphone-1.jpg"
+import HeadphoneTwo from "../../assets/images/headphone-2.png"
+import HeadphoneThree from "../../assets/images/headphone-3.png"
+import HeadphoneFour from "../../assets/images/headphone-4.png"
 ---
+
+
 <Layout>
     <main>
         <h2>Headphones</h2>
         <section>
             <ListItem
                 itemName="Headphone 1"
-                itemImgURL="../../assets/images/headphone-1.jpg"
+                itemImgURL={HeadphoneOne.src}
                 price="$20"
                 itemPageURL="/Final-Project-Website/Item-pages/headphones/headphone-one"
             />
@@ -17,7 +23,7 @@ import ListItem from '../../components/item.astro'
         <section>
             <ListItem
                 itemName="Headphone 2"
-                itemImgURL="../../assets/images/headphone-2.png"
+                itemImgURL={HeadphoneTwo.src}
                 price="$30"
                 itemPageURL=""
             />
@@ -25,7 +31,7 @@ import ListItem from '../../components/item.astro'
         <section>
             <ListItem
                 itemName="Headphone 3"
-                itemImgURL="../../assets/images/headphone-3.png"
+                itemImgURL={HeadphoneThree.src}
                 price="$40"
                 itemPageURL=""
             />
@@ -33,7 +39,7 @@ import ListItem from '../../components/item.astro'
         <section>
             <ListItem
                 itemName="Headphone 4"
-                itemImgURL="../../assets/images/headphone-4.png"
+                itemImgURL={HeadphoneFour.src}
                 price="$50"
                 itemPageURL=""
             />

@@ -2,6 +2,10 @@
 import '../../styles/styles.css'
 import Layout from '../../layouts/Layout.astro'
 import ListItem from '../../components/item.astro'
+import KeyboardOne from "../../assets/images/keyboard-1.png"
+import KeyboardTwo from "../../assets/images/keyboard-2.png"
+import KeyboardThree from "../../assets/images/keyboard-3.png"
+import KeyboardFour from "../../assets/images/keyboard-4.png"
 ---
 <Layout>
     <main>
@@ -9,7 +13,7 @@ import ListItem from '../../components/item.astro'
         <section>
             <ListItem
                 itemName="Keyboard 1"
-                itemImgURL="../../assets/images/keyboard-1.png"
+                itemImgURL={KeyboardOne.src}
                 price="$20"
                 itemPageURL="/Final-Project-Website/Item-pages/keyboards/keyboard-one"
             />
@@ -17,7 +21,7 @@ import ListItem from '../../components/item.astro'
         <section>
             <ListItem
                 itemName="Keyboard 2"
-                itemImgURL="../../assets/images/keyboard-2.png"
+                itemImgURL={KeyboardTwo.src}
                 price="$30"
                 itemPageURL=""
             />
@@ -25,7 +29,7 @@ import ListItem from '../../components/item.astro'
         <section>
             <ListItem
                 itemName="Keyboard 3"
-                itemImgURL="../../assets/images/keyboard-3.png"
+                itemImgURL={KeyboardThree.src}
                 price="$40"
                 itemPageURL=""
             />
@@ -33,7 +37,7 @@ import ListItem from '../../components/item.astro'
         <section>
             <ListItem
                 itemName="Keyboard 4"
-                itemImgURL="../../assets/images/keyboard-4.png"
+                itemImgURL={KeyboardFour.src}
                 price="$50"
                 itemPageURL=""
             />

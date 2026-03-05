@@ -2,6 +2,10 @@
 import '../../styles/styles.css'
 import Layout from '../../layouts/Layout.astro'
 import ListItem from '../../components/item.astro'
+import MonitorOne from "../../assets/images/monitor-1.png"
+import MonitorTwo from "../../assets/images/monitor-2.png"
+import MonitorThree from "../../assets/images/monitor-3.png"
+import MonitorFour from "../../assets/images/monitor-4.png"
 ---
 
 <Layout>
@@ -10,15 +14,15 @@ import ListItem from '../../components/item.astro'
         <section>
             <ListItem
                 itemName="Monitor 1"
-                itemImgURL="../../assets/images/monitor-1.png"
+                itemImgURL={MonitorOne.src}
                 price="$20"
-                itemPageURL="/Final-Project-Website/Item-pages/headphones/headphone-one"
+                itemPageURL="/Final-Project-Website/Item-pages/monitors/monitor-one"
             />
         </section>
         <section>
             <ListItem
                 itemName="Monitor 2"
-                itemImgURL="../../assets/images/monitor-2.png"
+                itemImgURL={MonitorTwo.src}
                 price="$30"
                 itemPageURL=""
             />
@@ -26,7 +30,7 @@ import ListItem from '../../components/item.astro'
         <section>
             <ListItem
                 itemName="Monitor 3"
-                itemImgURL="../../assets/images/monitor-3.png"
+                itemImgURL={MonitorThree.src}
                 price="$40"
                 itemPageURL=""
             />
@@ -34,7 +38,7 @@ import ListItem from '../../components/item.astro'
         <section>
             <ListItem
                 itemName="Monitor 4"
-                itemImgURL="../../assets/images/monitor-4.png"
+                itemImgURL={MonitorFour.src}
                 price="$50"
                 itemPageURL=""
             />

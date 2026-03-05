@@ -1,0 +1,32 @@
+---
+import '../styles/styles.css'
+const { itemImgURL, itemName, specs, price } = Astro.props;
+---
+<style>
+    img {
+        height: 20vw;
+        padding: 20px;
+    }
+    section {
+        display: flex;
+        justify-content: space-around;
+    }
+    h2 {
+        display: flex;
+        justify-content: center;
+    }
+    h3 {
+        padding: 3vw;
+    }
+    p {
+        padding: 5vw;
+    }
+</style>
+<main>
+    <section>
+        <img src = {itemImgURL} alt = {itemName}>
+    </section>
+    <h2>{itemName}</h2>
+    <h3>{price}</h3>
+    <p>{specs}</p>
+</main>

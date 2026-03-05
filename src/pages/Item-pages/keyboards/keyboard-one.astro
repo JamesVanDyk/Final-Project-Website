@@ -1,0 +1,17 @@
+---
+import '../../../styles/styles.css'
+import Layout from '../../../layouts/Layout.astro'
+import Keyboard from "../../../assets/images/keyboard-1.png"
+import ItemPage from "../../../components/item-page.astro"
+---
+
+<Layout>
+    <main>
+        <ItemPage
+            itemImgURL={Keyboard.src}
+            itemName="Keyboard One"
+            price="$20"
+            specs="lamda"
+        />
+    </main>
+</Layout>

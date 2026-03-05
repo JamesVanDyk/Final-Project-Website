@@ -3,6 +3,13 @@ import '../styles/styles.css'
 const { itemName, itemImgURL, price, itemPageURL } = Astro.props;
 ---
 
+<style>
+    section {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
 <main>
     <section>
         <a href={ itemPageURL }><img src={ itemImgURL } alt={ itemName }></a>

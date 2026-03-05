@@ -1,0 +1,17 @@
+---
+import '../../../styles/styles.css'
+import Layout from '../../../layouts/Layout.astro'
+import Mouse from "../../../assets/images/mouse-1.png"
+import ItemPage from "../../../components/item-page.astro"
+---
+
+<Layout>
+    <main>
+        <ItemPage
+            itemImgURL={Mouse.src}
+            itemName="Mouse One"
+            price="$20"
+            specs="lamda"
+        />
+    </main>
+</Layout>

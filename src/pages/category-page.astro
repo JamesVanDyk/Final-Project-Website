@@ -2,28 +2,32 @@
 import '../styles/styles.css'
 import Category from '../components/category.astro'
 import Layout from '../layouts/Layout.astro'
+import KeyboardOne from '../assets/images/keyboard-1.png'
+import MouseOne from '../assets/images/mouse-1.png'
+import MonitorOne from '../assets/images/monitor-1.png'
+import HeadphoneOne from '../assets/images/headphone-1.jpg'
 ---
 
 <Layout>
     <main>
         <Category
             categ="Keyboards"
-            imgURL="../assets/images/keyboard-1.png"
+            imgURL={KeyboardOne.src}
             catLink="/Final-Project-Website/categories/keyboards"
         />
         <Category
             categ="Mice"
-            imgURL="../assets/images/mouse-1.png"
+            imgURL={MouseOne.src}
             catLink="/Final-Project-Website/categories/mice"
         />
         <Category
             categ="Monitors"
-            imgURL="../assets/images/monitor-1.png"
+            imgURL={MonitorOne.src}
             catLink="/Final-Project-Website/categories/monitors"
         />
         <Category
             categ="Headphones"
-            imgURL="../assets/images/headphone-1.jpg"
+            imgURL={HeadphoneOne.src}
             catLink="/Final-Project-Website/categories/headphones"
         />
     </main>
