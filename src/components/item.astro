@@ -8,14 +8,21 @@ const { itemName, itemImgURL, price, itemPageURL } = Astro.props;
         display: flex;
         justify-content: center;
     }
+    h3, h4 {
+        font-size: 1.75rem;
+    }
+    img {
+        background-color: #1B236B;
+        border: 20px solid #1B236B;
+    }
 </style>
 
 <main>
     <section>
-        <a href={ itemPageURL }><img src={ itemImgURL } alt={ itemName }></a>
+        <h3><strong>{ itemName }</strong></h3>
     </section>
     <section>
-        <h3><strong>{ itemName }</strong></h3>
+        <a href={ itemPageURL }><img src={ itemImgURL } alt={ itemName }></a>
     </section>
     <section>
         <h4><em>{ price }</em></h4>

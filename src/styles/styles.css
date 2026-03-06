@@ -15,10 +15,6 @@
 }
 
 
-/* header, main, footer {
-    display: flex
-} */
-
 header {
     min-width: 100vw;
     position: sticky;
@@ -26,11 +22,15 @@ header {
     z-index: 1000;
 }
 
-
-
-
 h1 {
     font-weight: 500;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    border: 5px solid lightblue;
 }
 
 ul {

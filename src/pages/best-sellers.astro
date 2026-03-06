@@ -1,8 +1,49 @@
 ---
 import '../styles/styles.css'
 import Layout from '../layouts/Layout.astro'
+import Best from '../components/item.astro'
+import HeadphoneThree from '../assets/images/headphone-3.png'
+import MouseFour from '../assets/images/mouse-4.png'
+import KeyboardTwo from '../assets/images/keyboard-2.png'
+import MonitorOne from '../assets/images/monitor-1.png'
 ---
+<style>
+    h2, h3{
+        display: flex;
+        justify-content: center;
+    }
+    h2 {
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+</style>
 <Layout>
     <main>
+        <h2>Best Sellers</h2>
+        <h3><em>Best selling items of each category!</em></h3>
+        <Best
+            itemName="Headphone 3"
+            itemImgURL={HeadphoneThree.src}
+            price="$40"
+            itemPageURL="/Final-Project-Website/Item-pages/headphones/headphone-three"
+        />
+        <Best
+            itemName="Mouse 4"
+            itemImgURL={MouseFour.src}
+            price="$50"
+            itemPageURL="/Final-Project-Website/Item-pages/mice/mouse-four"
+        />
+        <Best
+            itemName="Keyboard 2"
+            itemImgURL={KeyboardTwo.src}
+            price="$30"
+            itemPageURL="/Final-Project-Website/Item-pages/keyboards/keyboard-two"
+        />
+        <Best
+            itemName="Monitor 1"
+            itemImgURL={MonitorOne.src}
+            price="$20"
+            itemPageURL="/Final-Project-Website/Item-pages/monitors/monitor-one"
+        />
     </main>
 </Layout>

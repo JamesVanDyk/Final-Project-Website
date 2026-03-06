@@ -1,8 +1,38 @@
 ---
-
+import '../styles/styles.css'
 import Layout from '../layouts/Layout.astro'
+import BestSeller from '../assets/images/keyboard-2.png'
+import Categories from '../assets/images/monitor-2.png'
 ---
+<style>
+	.mainpage {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-gap: 20px 30px;
+		margin: 30px;
+	}
+	.labels {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	h2 {
+		font-size: 36px;
+		border: 20px solid lightblue;
+	}
+	img {
+		background-color: #1B236B;
+		border: 20px solid #1B236B;
+	}
+</style>
 <Layout>
 	<main>
+		<section class='mainpage'>
+			<a href="/Final-Project-Website/best-sellers" class="labels"><h2>See Our Best Sellers!</h2></a>
+			<div class="labels"><a href="/Final-Project-Website/best-sellers"><img src={BestSeller.src} alt="Best Sellers!"></a></div>
+			<div class="labels"><a href="/Final-Project-Website/category-page"><img src={Categories.src} alt="All Categories!"></a></div>
+			<a href="/Final-Project-Website/best-sellers" class="labels"><h2>See All Categories!</h2></a>
+		</section>
 	</main>
 </Layout>
